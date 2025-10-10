@@ -1,0 +1,6 @@
+E:\EZE SD\pasantia\Biblioteca.App\Biblioteca.Datos\bin\Debug\Biblioteca.Datos.dll
+E:\EZE SD\pasantia\Biblioteca.App\Biblioteca.Datos\bin\Debug\Biblioteca.Datos.pdb
+E:\EZE SD\pasantia\Biblioteca.App\Biblioteca.Datos\bin\Debug\System.Data.Common.dll
+E:\EZE SD\pasantia\Biblioteca.App\Biblioteca.Datos\bin\Debug\System.Data.SqlClient.dll
+E:\EZE SD\pasantia\Biblioteca.App\Biblioteca.Datos\obj\Debug\Biblioteca.Datos.dll
+E:\EZE SD\pasantia\Biblioteca.App\Biblioteca.Datos\obj\Debug\Biblioteca.Datos.pdb
