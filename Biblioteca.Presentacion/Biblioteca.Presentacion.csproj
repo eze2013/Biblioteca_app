@@ -51,9 +51,9 @@
     <None Include="App1.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Biblioteca.Datos\Biblioteca.Datos.csproj">
-      <Project>{97d92cd7-8eac-46ec-a9af-f82732b2ca3d}</Project>
-      <Name>Biblioteca.Datos</Name>
+    <ProjectReference Include="..\Biblioteca.Modelos\Biblioteca.Modelos.csproj">
+      <Project>{8bd4338c-6699-488a-a27f-5d72750d1e21}</Project>
+      <Name>Biblioteca.Modelos</Name>
     </ProjectReference>
     <ProjectReference Include="..\Biblioteca.Negocio\Biblioteca.Negocio.csproj">
       <Project>{15004f34-352a-4e57-b517-19c9170875d9}</Project>

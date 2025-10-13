@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Biblioteca.Negocio; // Necesita ver la Capa de Negocio
-using Biblioteca.Datos;
+using Biblioteca.Modelos;
+using Biblioteca.Negocio;
+
 
 
 namespace Biblioteca.Presentacion

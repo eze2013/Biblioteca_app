@@ -4,3 +4,6 @@ E:\EZE SD\pasantia\Biblioteca.App\Biblioteca.Datos\bin\Debug\System.Data.Common.
 E:\EZE SD\pasantia\Biblioteca.App\Biblioteca.Datos\bin\Debug\System.Data.SqlClient.dll
 E:\EZE SD\pasantia\Biblioteca.App\Biblioteca.Datos\obj\Debug\Biblioteca.Datos.dll
 E:\EZE SD\pasantia\Biblioteca.App\Biblioteca.Datos\obj\Debug\Biblioteca.Datos.pdb
+E:\EZE SD\pasantia\Biblioteca.App\Biblioteca.Datos\obj\Debug\Biblioteca.Datos.csprojResolveAssemblyReference.cache
+E:\EZE SD\pasantia\Biblioteca.App\Biblioteca.Datos\bin\Debug\Biblioteca.Modelos.dll
+E:\EZE SD\pasantia\Biblioteca.App\Biblioteca.Datos\bin\Debug\Biblioteca.Modelos.pdb

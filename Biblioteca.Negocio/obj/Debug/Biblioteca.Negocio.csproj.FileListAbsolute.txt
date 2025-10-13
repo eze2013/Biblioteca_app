@@ -5,3 +5,5 @@ E:\EZE SD\pasantia\Biblioteca.App\Biblioteca.Negocio\bin\Debug\Biblioteca.Datos.
 E:\EZE SD\pasantia\Biblioteca.App\Biblioteca.Negocio\obj\Debug\Biblioteca.Negocio.csprojResolveAssemblyReference.cache
 E:\EZE SD\pasantia\Biblioteca.App\Biblioteca.Negocio\obj\Debug\Biblioteca.Negocio.dll
 E:\EZE SD\pasantia\Biblioteca.App\Biblioteca.Negocio\obj\Debug\Biblioteca.Negocio.pdb
+E:\EZE SD\pasantia\Biblioteca.App\Biblioteca.Negocio\bin\Debug\Biblioteca.Modelos.dll
+E:\EZE SD\pasantia\Biblioteca.App\Biblioteca.Negocio\bin\Debug\Biblioteca.Modelos.pdb

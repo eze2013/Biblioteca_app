@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data.SqlClient; // Necesitamos esta librería para usar los objetos de SQL Server
 using System.Linq;
+using Biblioteca.Modelos;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,7 +11,7 @@ namespace Biblioteca.Datos
     public class AutorDAL
     {
         private readonly string _cadenaConexion =
-        "#############";
+        "########################";
         public List<Autor> ListarAutores()
         {
             // Creamos una lista vacía que llenaremos con objetos 'Autor'

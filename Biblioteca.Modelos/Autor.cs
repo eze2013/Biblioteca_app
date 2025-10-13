@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Biblioteca.Datos
+namespace Biblioteca.Modelos
 {
     public class Autor
     {

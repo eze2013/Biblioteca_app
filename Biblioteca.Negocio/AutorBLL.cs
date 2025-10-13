@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Biblioteca.Datos; // Necesitamos poder ver la Capa de Datos
+using Biblioteca.Modelos;
 
 namespace Biblioteca.Negocio
 {

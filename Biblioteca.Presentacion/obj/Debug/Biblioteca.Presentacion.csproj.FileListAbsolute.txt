@@ -8,3 +8,5 @@ E:\EZE SD\pasantia\Biblioteca.App\Biblioteca.Presentacion\bin\Debug\Biblioteca.N
 E:\EZE SD\pasantia\Biblioteca.App\Biblioteca.Presentacion\obj\Debug\Biblioteca.Presentacion.csprojResolveAssemblyReference.cache
 E:\EZE SD\pasantia\Biblioteca.App\Biblioteca.Presentacion\obj\Debug\Biblioteca.Presentacion.exe
 E:\EZE SD\pasantia\Biblioteca.App\Biblioteca.Presentacion\obj\Debug\Biblioteca.Presentacion.pdb
+E:\EZE SD\pasantia\Biblioteca.App\Biblioteca.Presentacion\bin\Debug\Biblioteca.Modelos.dll
+E:\EZE SD\pasantia\Biblioteca.App\Biblioteca.Presentacion\bin\Debug\Biblioteca.Modelos.pdb
