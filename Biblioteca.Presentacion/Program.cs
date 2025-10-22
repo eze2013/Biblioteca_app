@@ -5,21 +5,24 @@ using System.Text;
 using System.Threading.Tasks;
 using Biblioteca.Modelos;
 using Biblioteca.Negocio;
-
+using SimpleInjector;
+using Biblioteca.Datos;
 
 
 namespace Biblioteca.Presentacion
 {
     class Program
     {
+        private static readonly Container _container = new Container();
         static void Main(string[] args)
         {
+            ConfigureContainer();   
             Console.WriteLine("--- Aplicación de Consola: Listado de Autores ---");
             Console.WriteLine(" ");
+            IAutorBLL negocio = null;
             try
             {
-                // 1. Instanciar la Capa de Negocio (BLL)
-                AutorBLL negocio = new AutorBLL();
+                negocio = _container.GetInstance<IAutorBLL>();
 
                 // 2. Llamar al método ListarAutores()
                 // Esto inicia la cadena de ejecución: Presentación -> Negocio -> Datos -> SQL
@@ -55,6 +58,20 @@ namespace Biblioteca.Presentacion
             // Esperamos una tecla para que la ventana de la consola no se cierre inmediatamente
             Console.WriteLine("\nPresione cualquier tecla para finalizar...");
             Console.ReadKey();
+        }
+        private static void ConfigureContainer()
+        {
+            // Mapeo de Abstracción a Implementación:
+
+            // 1. Mapeo del Contrato DAL a su Implementación concreta (DAL)
+            _container.Register<IAutorDAL, AutorDAL>(Lifestyle.Transient);
+
+            // 2. Mapeo del Contrato BLL a su Implementación concreta (BLL)
+            // SimpleInjector inyectará IAutorDAL automáticamente en el constructor de AutorBLL.
+            _container.Register<IAutorBLL, AutorBLL>(Lifestyle.Transient);
+
+            // 3. Opcional, pero vital para SimpleInjector:
+            _container.Verify();
         }
     }
 }

@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 
 namespace Biblioteca.Datos
 {
-    public class AutorDAL
+    public class AutorDAL : IAutorDAL
     {
         private readonly string _cadenaConexion =
-        "########################";
+        "################";
         public List<Autor> ListarAutores()
         {
             // Creamos una lista vacía que llenaremos con objetos 'Autor'

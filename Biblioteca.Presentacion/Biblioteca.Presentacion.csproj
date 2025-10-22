@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="SimpleInjector, Version=5.0.0.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleInjector.5.5.0\lib\net45\SimpleInjector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -49,8 +53,13 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="App1.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Biblioteca.Datos\Biblioteca.Datos.csproj">
+      <Project>{97d92cd7-8eac-46ec-a9af-f82732b2ca3d}</Project>
+      <Name>Biblioteca.Datos</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Biblioteca.Modelos\Biblioteca.Modelos.csproj">
       <Project>{8bd4338c-6699-488a-a27f-5d72750d1e21}</Project>
       <Name>Biblioteca.Modelos</Name>

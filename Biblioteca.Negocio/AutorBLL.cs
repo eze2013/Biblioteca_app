@@ -8,16 +8,45 @@ using Biblioteca.Modelos;
 
 namespace Biblioteca.Negocio
 {
-    public class AutorBLL
+    public class AutorBLL : IAutorBLL
     {
-        // En este método llamamos a la Capa de Presentación 
+        // 1. Dependencia: Ahora dependemos del CONTRATO (IAutorDAL), no de la clase concreta (AutorDAL)
+        private readonly IAutorDAL _autorDAL;
+
+        // 2. Inyección de Dependencias por Constructor (DI)
+        // El Contenedor DI llamará a este constructor y le pasará la implementación de IAutorDAL
+        public AutorBLL(IAutorDAL autorDAL)
+        {
+            _autorDAL = autorDAL;
+        }
+
+        // MÉTODOS DE LECTURA
         public List<Autor> ListarAutores()
         {
-            // Accedemos a los Datos 
-            AutorDAL datos = new AutorDAL();
-
-            // Llamamos al método de la Capa de Datos.
-            return datos.ListarAutores();
+            // Usamos la dependencia inyectada. ¡No hay new AutorDAL()!
+            return _autorDAL.ListarAutores();
         }
+
+        // MÉTODOS DE ESCRITURA
+        //public int InsertarAutor(Autor autor)
+        //{
+            // Aquí iría la validación de negocio
+            //if (string.IsNullOrEmpty(autor.Nombre) || string.IsNullOrEmpty(autor.Apellido))
+            //{
+              //  throw new Exception("El nombre y apellido del autor son obligatorios.");
+            //}
+            //return _autorDAL.InsertarAutor(autor);
+        //}
+
+        //public int ActualizarAutor(Autor autor)
+        //{
+           // return _autorDAL.ActualizarAutor(autor);
+        //}
+
+        //public int EliminarAutor(int idAutor)
+        //{
+           // return _autorDAL.EliminarAutor(idAutor);
+        //}
     }
 }
+
