@@ -1,4 +1,5 @@
 E:\EZE SD\pasantia\Biblioteca.App\Biblioteca.Modelos\bin\Debug\Biblioteca.Modelos.dll
 E:\EZE SD\pasantia\Biblioteca.App\Biblioteca.Modelos\bin\Debug\Biblioteca.Modelos.pdb
+E:\EZE SD\pasantia\Biblioteca.App\Biblioteca.Modelos\obj\Debug\Biblioteca.Modelos.csprojResolveAssemblyReference.cache
 E:\EZE SD\pasantia\Biblioteca.App\Biblioteca.Modelos\obj\Debug\Biblioteca.Modelos.dll
 E:\EZE SD\pasantia\Biblioteca.App\Biblioteca.Modelos\obj\Debug\Biblioteca.Modelos.pdb

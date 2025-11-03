@@ -27,26 +27,23 @@ namespace Biblioteca.Negocio
             return _autorDAL.ListarAutores();
         }
 
-        // MÉTODOS DE ESCRITURA
-        //public int InsertarAutor(Autor autor)
-        //{
-            // Aquí iría la validación de negocio
-            //if (string.IsNullOrEmpty(autor.Nombre) || string.IsNullOrEmpty(autor.Apellido))
-            //{
-              //  throw new Exception("El nombre y apellido del autor son obligatorios.");
-            //}
-            //return _autorDAL.InsertarAutor(autor);
-        //}
+        public List<Pais> ListarTodosLosPaises()
+        {
+            // Delegamos la llamada al DAL, que se encargará de la conexión y el SQL
+            return _autorDAL.ObtenerTodosLosPaises();
+        }
 
-        //public int ActualizarAutor(Autor autor)
-        //{
-           // return _autorDAL.ActualizarAutor(autor);
-        //}
+        public List<Autor> ListarAutoresPorPais(int idPais)
+        {
+            // Delegamos al DAL. El BLL solo verifica si la llamada tiene sentido.
+            if (idPais <= 0)
+            {
+                // Ejemplo de una simple validación de negocio en el BLL
+                throw new ArgumentException("El ID de País debe ser un valor positivo.");
+            }
+            return _autorDAL.ListarAutoresPorPais(idPais);
+        }
 
-        //public int EliminarAutor(int idAutor)
-        //{
-           // return _autorDAL.EliminarAutor(idAutor);
-        //}
     }
 }
 

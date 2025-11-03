@@ -11,7 +11,7 @@ namespace Biblioteca.Datos
     public class AutorDAL : IAutorDAL
     {
         private readonly string _cadenaConexion =
-        "################";
+        "############";
         public List<Autor> ListarAutores()
         {
             // Creamos una lista vacía que llenaremos con objetos 'Autor'
@@ -58,5 +58,91 @@ namespace Biblioteca.Datos
             } // La conexión se cierra automáticamente
             return listaAutores; // Devolvemos la lista llena o vacía
         }
+        //------------------------------------------------------------------------------------
+        public List<Pais> ObtenerTodosLosPaises()
+        {
+            List<Pais> listaPaises = new List<Pais>();
+            using (SqlConnection conexion = new SqlConnection(_cadenaConexion))
+            {
+                // 1. Ahora uso el nombre del SP en lugar del SELECT
+                string nombreSP = "SP_BIB_ObtenerTodosLosPaises";
+
+                using (SqlCommand comando = new SqlCommand(nombreSP, conexion))
+                {
+                    // 2. 🚨 Indico que es un Procedimiento Almacenado
+                    comando.CommandType = System.Data.CommandType.StoredProcedure;
+
+                    try
+                    {
+                        conexion.Open();
+                        using (SqlDataReader lector = comando.ExecuteReader())
+                        {
+                            while (lector.Read())
+                            {
+                                // El mapeo es excelente
+                                Pais pais = new Pais
+                                {
+                                    Id = lector.GetInt32(0),
+                                    Nombre = lector.GetString(1)
+                                };
+                                listaPaises.Add(pais);
+                            }
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        throw new Exception("Error al obtener países de la base de datos.", ex);
+                    }
+                }
+            }
+            return listaPaises;
+        }
+
+        // ----------------------------------------------------------------------------------
+        public List<Autor> ListarAutoresPorPais(int idPais)
+        {
+            List<Autor> listaAutores = new List<Autor>();
+
+            // 1. Ahora usamos el nombre del SP
+            string nombreSP = "SP_BIB_ListarAutoresPorPais";
+
+            using (SqlConnection conexion = new SqlConnection(_cadenaConexion))
+            {
+                using (SqlCommand comando = new SqlCommand(nombreSP, conexion))
+                {
+                    // 2. 🚨 ¡CRUCIAL! Indico que es un Procedimiento Almacenado
+                    comando.CommandType = System.Data.CommandType.StoredProcedure;
+
+                    // Seguimos con la mejor práctica de agregar el parámetro
+                    comando.Parameters.Add(new SqlParameter("@IdPais", idPais)); // Uso @IdPais ya que es el nombre que definimos en el SP
+
+                    try
+                    {
+                        conexion.Open();
+                        using (SqlDataReader lector = comando.ExecuteReader())
+                        {
+                            while (lector.Read())
+                            {
+                                // El mapeo está perfecto
+                                Autor autor = new Autor
+                                {
+                                    Id = lector.GetInt32(0),
+                                    Nombre = lector.GetString(1),
+                                    Apellido = lector.GetString(2),
+                                    PaisId = lector.GetInt32(3)
+                                };
+                                listaAutores.Add(autor);
+                            }
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        throw new Exception("Error al obtener autores por país de la base de datos. Verifique el SP 'SP_BIB_ListarAutoresPorPais'.", ex);
+                    }
+                }
+            }
+            return listaAutores;
+        }
     }
+
 }

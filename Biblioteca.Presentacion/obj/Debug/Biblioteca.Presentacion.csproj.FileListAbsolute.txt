@@ -4,11 +4,14 @@ E:\EZE SD\pasantia\Biblioteca.App\Biblioteca.Presentacion\bin\Debug\Biblioteca.P
 E:\EZE SD\pasantia\Biblioteca.App\Biblioteca.Presentacion\bin\Debug\Biblioteca.Datos.dll
 E:\EZE SD\pasantia\Biblioteca.App\Biblioteca.Presentacion\bin\Debug\Biblioteca.Modelos.dll
 E:\EZE SD\pasantia\Biblioteca.App\Biblioteca.Presentacion\bin\Debug\Biblioteca.Negocio.dll
+E:\EZE SD\pasantia\Biblioteca.App\Biblioteca.Presentacion\bin\Debug\Microsoft.Web.Infrastructure.dll
 E:\EZE SD\pasantia\Biblioteca.App\Biblioteca.Presentacion\bin\Debug\SimpleInjector.dll
+E:\EZE SD\pasantia\Biblioteca.App\Biblioteca.Presentacion\bin\Debug\SimpleInjector.Integration.Web.dll
 E:\EZE SD\pasantia\Biblioteca.App\Biblioteca.Presentacion\bin\Debug\Biblioteca.Datos.pdb
 E:\EZE SD\pasantia\Biblioteca.App\Biblioteca.Presentacion\bin\Debug\Biblioteca.Modelos.pdb
 E:\EZE SD\pasantia\Biblioteca.App\Biblioteca.Presentacion\bin\Debug\Biblioteca.Negocio.pdb
 E:\EZE SD\pasantia\Biblioteca.App\Biblioteca.Presentacion\bin\Debug\SimpleInjector.xml
+E:\EZE SD\pasantia\Biblioteca.App\Biblioteca.Presentacion\bin\Debug\SimpleInjector.Integration.Web.xml
 E:\EZE SD\pasantia\Biblioteca.App\Biblioteca.Presentacion\obj\Debug\Biblioteca.Presentacion.csprojResolveAssemblyReference.cache
 E:\EZE SD\pasantia\Biblioteca.App\Biblioteca.Presentacion\obj\Debug\Biblioteca.Presentacion.exe
 E:\EZE SD\pasantia\Biblioteca.App\Biblioteca.Presentacion\obj\Debug\Biblioteca.Presentacion.pdb
