@@ -75,6 +75,7 @@ El proyecto evoluciona a través de diferentes etapas, cada una agregando nuevas
 🧰 Framework de pruebas: MSTest
 🎯 Objetivo: asegurar la correcta funcionalidad del método y fortalecer la calidad del código.
 
+
 🌐 Tarea 5 – Aplicación web (ASP.NET)
 
 ** Desarrollo de una aplicación web con ASP.NET Web Forms.
@@ -108,10 +109,15 @@ Conexión corporativa	VPN Fabricard
 
 BibliotecaApp/
 │
+
 ├── Datos/                # Acceso a datos (DAO, conexión SQL)
+
 ├── Negocio/              # Lógica de negocio e interfaces
+
 ├── Presentacion/         # Consola o WebApp según la etapa
+
 ├── Tests/                # Proyecto de Unit Testing
+
 └── Scripts_SQL/          # Creación de BD y procedimientos almacenados
 
 
