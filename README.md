@@ -8,6 +8,7 @@ El trabajo abarca desde la creación del modelo de datos hasta la construcción 
 Biblioteca App es un sistema diseñado para gestionar la información de una biblioteca, abarcando la relación entre libros, autores, países de origen, copias y estanterías.
 El proyecto evoluciona a través de diferentes etapas, cada una agregando nuevas capas de complejidad técnica y buenas prácticas de desarrollo.
 
+
 🧩 Etapas del proyecto
 🗂️ Tarea 1 – Diseño y creación de base de datos
 
@@ -30,6 +31,7 @@ El proyecto evoluciona a través de diferentes etapas, cada una agregando nuevas
 💡 Lenguaje: SQL Server
 💾 Objetivo: Comprender el diseño relacional, normalización y uso de procedimientos almacenados.
 
+
 ⚙️ Tarea 2 – Aplicación de consola (arquitectura en capas)
 
 ** Desarrollo en Visual Studio (C# / .NET Framework).
@@ -46,6 +48,7 @@ El proyecto evoluciona a través de diferentes etapas, cada una agregando nuevas
 
 🧱 Objetivo: aplicar el patrón de arquitectura en capas y separación de responsabilidades.
 
+
 🧠 Tarea 3 – Refactorización e inyección de dependencias
 
 ** Implementación de interfaces para las clases de acceso a datos y negocio.
@@ -57,6 +60,7 @@ El proyecto evoluciona a través de diferentes etapas, cada una agregando nuevas
 ** Eliminación del uso de instanciación directa (new) en la capa de presentación.
 
 🔁 Objetivo: aplicar principios SOLID, mejorar mantenibilidad y testabilidad del código.
+
 
 🧪 Tarea 4 – Pruebas unitarias
 
@@ -76,15 +80,19 @@ El proyecto evoluciona a través de diferentes etapas, cada una agregando nuevas
 ** Desarrollo de una aplicación web con ASP.NET Web Forms.
 
 ** Implementación de una página que:
-       ** Muestra un ComboBox con los países disponibles (obtenidos de la BD).
-       ** Permite seleccionar un país y consultar los autores correspondientes.
-      ** Muestra los resultados en una grilla dinámica.
+
+** Muestra un ComboBox con los países disponibles (obtenidos de la BD).
+      
+** Permite seleccionar un país y consultar los autores correspondientes.
+      
+** Muestra los resultados en una grilla dinámica.
       
 ** Integración directa con los procedimientos almacenados de la base de datos.
 
 ** Uso de Master Page de plantilla para uniformidad visual.
 
 💻 Objetivo: integrar backend y frontend, consolidando los conocimientos en ASP.NET y SQL Server.
+
 
 🛠️ Tecnologías utilizadas
 Tipo	Herramientas
@@ -95,6 +103,7 @@ Frameworks / Librerías	ASP.NET, Simple Injector, MSTest
 Control de versiones	Git / GitHub
 Conexión corporativa	VPN Fabricard
 
+
 🧩 Arquitectura general
 
 BibliotecaApp/
@@ -104,6 +113,7 @@ BibliotecaApp/
 ├── Presentacion/         # Consola o WebApp según la etapa
 ├── Tests/                # Proyecto de Unit Testing
 └── Scripts_SQL/          # Creación de BD y procedimientos almacenados
+
 
 🎯 Objetivo formativo
 
@@ -123,5 +133,7 @@ Este proyecto me permitió fortalecer competencias clave en:
 💬 Autor
 
 Ezequiel Sánchez
+
 💼 Desarrollador en formación – Pasantía en Fabricard
+
 🌐 LinkedIn - https://www.linkedin.com/in/hugo-ezequiel-sanchez/
