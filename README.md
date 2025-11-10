@@ -14,11 +14,17 @@ El proyecto evoluciona a través de diferentes etapas, cada una agregando nuevas
 ** Modelado relacional completo para una biblioteca.
 
 ** Creación de tablas con convenciones de nombres normalizadas (BIB_Entidad).
+
 ** Implementación de claves primarias y foráneas con nombres estandarizados.
+
 ** Inserción de registros de prueba.
+
 ** Desarrollo de procedimientos almacenados para:
+
 ** Buscar un libro por nombre.
+
 ** Obtener autores según el país de nacimiento.
+
 ** Listar todas las copias disponibles de un libro y su ubicación en estanterías.
 
 💡 Lenguaje: SQL Server
@@ -27,10 +33,15 @@ El proyecto evoluciona a través de diferentes etapas, cada una agregando nuevas
 ⚙️ Tarea 2 – Aplicación de consola (arquitectura en capas)
 
 ** Desarrollo en Visual Studio (C# / .NET Framework).
+
 ** Estructura de 3 capas:
+
 ** Datos: conexión y consultas a la base de datos.
+
 ** Negocio: lógica de obtención y procesamiento de información.
+
 ** Presentación: aplicación de consola para listar autores de libros.
+
 ** Integración con la base de datos de la Tarea 1 mediante conexión a VPN corporativa.
 
 🧱 Objetivo: aplicar el patrón de arquitectura en capas y separación de responsabilidades.
@@ -38,8 +49,11 @@ El proyecto evoluciona a través de diferentes etapas, cada una agregando nuevas
 🧠 Tarea 3 – Refactorización e inyección de dependencias
 
 ** Implementación de interfaces para las clases de acceso a datos y negocio.
+
 ** Aplicación de inyección de dependencias a través de constructores.
+
 ** Uso de la librería Simple Injector para resolver dependencias en tiempo de ejecución.
+
 ** Eliminación del uso de instanciación directa (new) en la capa de presentación.
 
 🔁 Objetivo: aplicar principios SOLID, mejorar mantenibilidad y testabilidad del código.
@@ -47,8 +61,11 @@ El proyecto evoluciona a través de diferentes etapas, cada una agregando nuevas
 🧪 Tarea 4 – Pruebas unitarias
 
 ** Creación de un proyecto de Unit Test para la capa de negocio.
+
 ** Desarrollo de un test case para el método de consulta de autores.
+
 ** Implementación de mocks que simulan el comportamiento del DAO, retornando una lista de 3 autores.
+
 ** Validación de que el resultado no sea nulo y contenga más de un elemento.
 
 🧰 Framework de pruebas: MSTest
@@ -57,11 +74,14 @@ El proyecto evoluciona a través de diferentes etapas, cada una agregando nuevas
 🌐 Tarea 5 – Aplicación web (ASP.NET)
 
 ** Desarrollo de una aplicación web con ASP.NET Web Forms.
+
 ** Implementación de una página que:
-      ** Muestra un ComboBox con los países disponibles (obtenidos de la BD).
-      ** Permite seleccionar un país y consultar los autores correspondientes.
+       ** Muestra un ComboBox con los países disponibles (obtenidos de la BD).
+       ** Permite seleccionar un país y consultar los autores correspondientes.
       ** Muestra los resultados en una grilla dinámica.
+      
 ** Integración directa con los procedimientos almacenados de la base de datos.
+
 ** Uso de Master Page de plantilla para uniformidad visual.
 
 💻 Objetivo: integrar backend y frontend, consolidando los conocimientos en ASP.NET y SQL Server.
@@ -89,10 +109,15 @@ BibliotecaApp/
 
 Este proyecto me permitió fortalecer competencias clave en:
 ** Diseño y modelado de bases de datos relacionales.
+
 ** Programación en capas con principios SOLID.
+
 ** Implementación de inyección de dependencias.
+
 ** Pruebas unitarias y uso de mocks.
+
 ** Desarrollo de aplicaciones web conectadas a base de datos.
+
 ** Representa un recorrido completo desde el backend hasta la interfaz de usuario, pasando por todas las capas de una aplicación profesional.
 
 💬 Autor
