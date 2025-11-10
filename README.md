@@ -12,6 +12,7 @@ El proyecto evoluciona a través de diferentes etapas, cada una agregando nuevas
 🗂️ Tarea 1 – Diseño y creación de base de datos
 
 ** Modelado relacional completo para una biblioteca.
+
 ** Creación de tablas con convenciones de nombres normalizadas (BIB_Entidad).
 ** Implementación de claves primarias y foráneas con nombres estandarizados.
 ** Inserción de registros de prueba.
