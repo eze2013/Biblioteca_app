@@ -3,11 +3,14 @@
 Proyecto desarrollado durante mi pasantía en Fabricard, como parte de una serie de ejercicios prácticos orientados al diseño, desarrollo y prueba de aplicaciones conectadas a bases de datos.
 El trabajo abarca desde la creación del modelo de datos hasta la construcción de una aplicación web funcional, pasando por arquitectura en capas, inyección de dependencias y pruebas unitarias.
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
 🚀 Descripción general
 
 Biblioteca App es un sistema diseñado para gestionar la información de una biblioteca, abarcando la relación entre libros, autores, países de origen, copias y estanterías.
 El proyecto evoluciona a través de diferentes etapas, cada una agregando nuevas capas de complejidad técnica y buenas prácticas de desarrollo.
 
+----------------------------------------------------------------------------------------------------------------
 
 🧩 Etapas del proyecto
 🗂️ Tarea 1 – Diseño y creación de base de datos
@@ -29,8 +32,10 @@ El proyecto evoluciona a través de diferentes etapas, cada una agregando nuevas
 ** Listar todas las copias disponibles de un libro y su ubicación en estanterías.
 
 💡 Lenguaje: SQL Server
+
 💾 Objetivo: Comprender el diseño relacional, normalización y uso de procedimientos almacenados.
 
+-------------------------------------------------------------------------------------------
 
 ⚙️ Tarea 2 – Aplicación de consola (arquitectura en capas)
 
@@ -48,6 +53,7 @@ El proyecto evoluciona a través de diferentes etapas, cada una agregando nuevas
 
 🧱 Objetivo: aplicar el patrón de arquitectura en capas y separación de responsabilidades.
 
+-------------------------------------------------------------------------------------------
 
 🧠 Tarea 3 – Refactorización e inyección de dependencias
 
@@ -61,6 +67,7 @@ El proyecto evoluciona a través de diferentes etapas, cada una agregando nuevas
 
 🔁 Objetivo: aplicar principios SOLID, mejorar mantenibilidad y testabilidad del código.
 
+---------------------------------------------------------------------------------------------
 
 🧪 Tarea 4 – Pruebas unitarias
 
@@ -73,8 +80,10 @@ El proyecto evoluciona a través de diferentes etapas, cada una agregando nuevas
 ** Validación de que el resultado no sea nulo y contenga más de un elemento.
 
 🧰 Framework de pruebas: MSTest
+
 🎯 Objetivo: asegurar la correcta funcionalidad del método y fortalecer la calidad del código.
 
+----------------------------------------------------------------------------------------------------
 
 🌐 Tarea 5 – Aplicación web (ASP.NET)
 
@@ -94,16 +103,25 @@ El proyecto evoluciona a través de diferentes etapas, cada una agregando nuevas
 
 💻 Objetivo: integrar backend y frontend, consolidando los conocimientos en ASP.NET y SQL Server.
 
+---------------------------------------------------------------------------------------------------
 
 🛠️ Tecnologías utilizadas
+
 Tipo	Herramientas
+
 Lenguajes	JavaScript (73.3%), HTML (10.9%), C# (10.7%), ASP.NET (5%), CSS (0.1%)
+
 Entorno	Visual Studio Community 2015
+
 Base de datos	SQL Server
+
 Frameworks / Librerías	ASP.NET, Simple Injector, MSTest
+
 Control de versiones	Git / GitHub
+
 Conexión corporativa	VPN Fabricard
 
+------------------------------------------------------------------------------------------------------------
 
 🧩 Arquitectura general
 
@@ -120,6 +138,7 @@ BibliotecaApp/
 
 └── Scripts_SQL/          # Creación de BD y procedimientos almacenados
 
+--------------------------------------------------------------------------------------------------------
 
 🎯 Objetivo formativo
 
@@ -135,6 +154,8 @@ Este proyecto me permitió fortalecer competencias clave en:
 ** Desarrollo de aplicaciones web conectadas a base de datos.
 
 ** Representa un recorrido completo desde el backend hasta la interfaz de usuario, pasando por todas las capas de una aplicación profesional.
+
+-------------------------------------------------------------------------------------------------------------------------------------------
 
 💬 Autor
 
